@@ -1,0 +1,161 @@
+.main-container{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    height: 100%;
+
+}
+
+.container{
+    background-color: antiquewhite;
+    padding: 20px;
+    margin: 20px;
+    min-width: 25%;
+    max-width: 33%;
+}
+
+.input{
+    width: auto;
+    padding: 10px;
+}
+
+.btn-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.error-ele{
+    display: none;
+    padding: none;
+    margin: none;
+    color: red;
+}
+
+.counter-box{
+    text-align: right;
+    width: 72%;
+    margin-bottom: 10px;
+}
+
+.button{
+    border-radius: 30px;
+    width: 140px;
+    height: 60px;
+    font-size: 15px;
+    color: #ffffff;
+    
+}
+.add-btn{
+    background-color: cornflowerblue;
+    margin-right: 20px;
+}
+.rst-btn{
+    background-color: crimson;
+    margin-right: 20px;
+}
+
+.item-container{
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.list-btn{
+    border-radius: 10px;
+    width: 70px;
+    height: 35px;
+    color: #ffffff;
+}
+
+.item-direction{
+    display: flex;
+    flex-direction: column;
+}
+
+.heading{
+    text-align: center;
+}
+
+/* .serial-no{
+    /* min-width: 10%;
+    max-width: 15%;
+    height: 30px; */
+}
+.name{
+    /* min-width: 50%;
+    max-width: 60%;
+    height: 30px; */
+}
+.quantity{
+    /* min-width: 20%;
+    max-width: 25%;
+    height: 30px; */
+} */
+.vl{
+    border-right: 3px solid black;
+    height: 20px;
+}
+
+.quantity-input{
+    width: 30px;
+    height: 23px;
+    padding: 3px;
+}
+.qnt-btn{
+    height: 29px;
+}
+.cart-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+table, th, td {
+    border: 1px solid black;
+  }
+
+th{
+    background-color: white;
+}
+tr:nth-child(even) {
+    background-color: Lightgreen;
+}
+
+.table-container{
+    background-color: white;
+    padding: 10px;
+}
+
+.discount-input{
+    border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  background-color: transparent;
+  padding: 10px;
+}
+
+.discount-input:focus{
+    outline: none;
+}
+
+
+
+@media (max-width: 768px) {
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        height: 100%;
+    
+    }
+
+    .container{
+        min-width: 80vw;
+    }
+    
+}

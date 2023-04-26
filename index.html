@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <form id="myForm" class="container">
+        <h3 class="heading">Dash Board</h3>
+        <label for="ID">ID:</label><br /><br />
+        <input type="text" id="ID" name="name" class="input" /><br /><br />
+        <span id="id-error" class="error-ele">Enter ID..!!</span> <br /><br />
+
+        <label for="name">Name:</label><br /><br />
+        <input type="text" id="name" name="name" class="input" /><br /><br />
+        <span id="name-error" class="error-ele">Enter Name..!!</span>
+        <br /><br />
+
+        <label for="price">Price:</label><br /><br />
+        <input
+          type="number"
+          id="price"
+          name="price"
+          class="input"
+        /><br /><br />
+        <span id="price-error" class="error-ele form-control"
+          >Enter Price..!!</span
+        >
+        <br /><br />
+
+        <label for="description">Description:</label><br /><br />
+        <textarea
+          type="text"
+          id="description"
+          name="description"
+          maxlength="50"
+          class="input"
+        ></textarea>
+        <br /><br />
+        <span id="description-error" class="form-control error-ele"
+          >Enter Description..!!</span
+        >
+        <br /><br />
+
+        <div class="counter-box">
+          <span id="counter">0</span> / <span>50</span>
+        </div>
+
+        <div class="btn-container">
+          <button
+            class="button add-btn"
+            type="button"
+            value="Submit"
+            onclick="submitForm()"
+          >
+            Add
+          </button>
+
+          <button type="button" value="Reset" class="button rst-btn">
+            Reset
+          </button>
+        </div>
+      </form>
+      <div class="container">
+        <h3 class="heading">Product List</h3>
+        <div id="products" class=""></div>
+      </div>
+
+      <div id="cart" class="container">
+        <h3 class="heading">Cart</h3>
+        <table id="cartTable" class="table-container">
+          <tr>
+            <th>Serial Number</th>
+            <th>Product Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total Price</th>
+            <th>Remove Item</th>
+          </tr>
+        </table>
+        <p id="grandTotal"> Total : 0</p>
+        <label for="discount">Discount : </label>
+        <span><input type="number" id="discount" name="discount" min="0" value="0" class="discount-input">%</span>
+        <h1>Bill To Pay : <span id="bill_amount"></span></h1>
+        <!-- <p id="grandTotal">Grand Total : </p> -->
+      </div>
+
+      <!-- <div class="container">
+        <h3 class="heading">Cart</h3>
+        <div id="cart" class="item-direction">
+          <!-- <div class="cart-items">
+              <span class="serial-no vl">Sr. No.</span>
+              <span class="name vl">Product Name</span>
+              <span class="quantity vl">Quantity</span>
+              <span class="quantity vl">Price</span>
+            </div>
+            <div class="cart-items">
+              <span>01</span>
+              <span>Mobile</span>
+              <span
+                ><button class="qnt-btn" onclick="decrease()">-</button
+                ><span name="quantity" id="quantity" class="quantity-input" min="0"
+                  >0</span
+                ><button class="qnt-btn" onclick="increase()">+</button></span
+              >
+              <span>Price</span>
+            </div> -->
+        <!-- </div> -->
+      </div> -->
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
